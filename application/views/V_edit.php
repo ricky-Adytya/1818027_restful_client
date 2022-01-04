@@ -25,9 +25,9 @@
         </nav>
     </div>
     <ul id="slide-out" class="sidenav">
-        <li><a href="#Berita">Berita</a></li>
-        <li><a href="#latest">Berita populer</a></li>
-        <li><a href="#game">Issue game</a></li>
+        <li><a href="<?= base_url('genshin') ?>">Semua Karakter</a></li>
+        <li><a href="<?= base_url('genshin/pria') ?>">Karakter Laki - Laki</a></li>
+        <li><a href="<?= base_url('genshin/wanita') ?>">Karakter Perempuan</a></li>
         
     </ul>
     <div class="container">
@@ -45,7 +45,7 @@
     <tr><td>Link Gambar</td><td><?php echo form_input('url_char',$datagenshin->url_char);?></td></tr>
     <tr><td colspan="2">
         <?php echo form_submit('submit','Simpan');?>
-        <?php echo anchor('kontak','Kembali');?></td></tr>
+        <?php echo anchor('genshin','Kembali');?></td></tr>
 </table>
 <?php
 echo form_close();
